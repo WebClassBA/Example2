@@ -51,13 +51,127 @@
             <li class="nav-item">
               <a class="nav-link" href="#book-details">Eerie stories</a>
             </li>
+<li>
 
+
+  <button
+class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#myModal">
+Open modal
+</button>
+
+</li>
        
      
           </ul>
         </div>
       </div>
     </nav>
+
+
+<div class="modal fade modal-lg" id="myModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Modal title</h5>
+<button type="button" class="btn-close"
+data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body">
+
+
+<form class="needs-validation" novalidate action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="27d98c48-7e60-4ee3-9afa-7d88097b36fd">
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input
+type="text"
+class="form-control"
+id="name"
+name="name"
+placeholder="Your name"
+required>
+<div class="invalid-feedback">Enter your 
+name.</div>
+</div>
+
+<div class="mb-3">
+<label for="book" class="form-label">Favorite 
+book</label>
+<select class="form-select" name="book" id="book" 
+required>
+<option value="" selected disabled>Select a 
+book</option>
+<option value="things-we-lost">
+Things We Lost in the Fire
+</option>
+<option value="our-share-of-night">
+Our Share of Night
+</option>
+<option value="dangers-of-smoking">
+The Dangers of Smoking in Bed
+</option>
+<option value="this-is-the-sea">This Is the 
+Sea</option>
+</select>
+<div class="invalid-feedback">Select a book.</div>
+</div>
+
+<div class="mb-3">
+<label for="email" class="form-label">Email</label>
+<input
+type="email"
+class="form-control"
+id="email"
+name="email"
+placeholder="nombre@email.com"
+required
+/>
+<div class="invalid-feedback">Enter a valid 
+email.</div>
+</div>
+
+
+<button>Enviar</button>
+
+
+
+
+</form>
+
+
+
+
+</div>
+<div class="modal-footer">
+
+  <div class="mb-3">
+<a
+href="https://www.anagrama-ed.es/"
+target="_blank"
+class="link-danger me-3"
+>
+Editorial Anagrama
+</a>
+<a
+href="[link removed]"
+target="_blank"
+class="link-danger"
+>
+Mariana's Site
+</a>
+
+<button class="btn btn-secondary"
+data-bs-dismiss="modal">
+          Close
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 
 
@@ -68,8 +182,8 @@
 
 
       <div class="container py-4">
- 
-       
+ <div class="row align-items-center justify-content-center">
+       <div class="col-lg-5">
         <p class="text-uppercase text-danger fw-bold mb-3">
           Literature, Horror and Culture
         </p>
@@ -85,7 +199,13 @@
         </p>
       
 
-       
+       </div>
+
+       <div class="col-lg-5">
+       <img src="img/animacion.svg" alt="">
+       </div>
+
+      </div>
 
       </div>
     </header>
@@ -139,5 +259,29 @@
     </footer>
 
     <script src="js/code.js"></script>
+
+    <script>
+
+
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    </script>
   </body>
 </html>
