@@ -1,0 +1,125 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,slnt,wdth,wght,ROND@1..144,-10..0,25..151,1..1000,0..100&family=Limelight&family=Martel:wght@300;900&display=swap');
+
+:root {
+  --horror-red: #9f263c;
+  --horror-dark: #211b22;
+  --horror-light: #f5eeee;
+}
+
+
+html {font-size: 10px;}
+body {
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+}
+
+h1 {font-size: 3.2rem;}
+h2, .h4 {font-size: 2.5rem;}
+
+
+.navbar-brand {
+  font-family: "Martel", serif;
+  font-size: 1.5rem;
+}
+
+
+
+.nav-link {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+
+header h1 {
+  line-height: 1.2;
+}
+
+header p.text-danger {
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+strong {
+  font-weight: 900;
+}
+
+
+
+
+
+header {
+  border-bottom: 3px solid var(--horror-red) !important;
+}
+
+
+#book-details {
+  border-radius: 12px;
+  border-top: 4px solid var(--horror-red) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+#book-details img {
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #f1eeee;
+  max-height: 420px;
+  object-fit: contain;
+
+}
+
+
+
+
+
+
+
+#menu-nav button {
+  font-size: 1.5rem;
+  padding: 12px 15px;
+  border: 1px solid #6c757d;
+    font-family: "Martel", serif;
+  font-weight: 300;
+  border-radius: 8px;
+
+}
+
+
+
+
+#menu-nav button:hover {
+  background-color: #343a40;
+  border-color: #dc3545 !important;
+  color: white;
+ 
+}
+
+
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--horror-red);
+}
+
+
+footer {
+  border-top: 2px solid var(--horror-light);
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+
+
